@@ -1,0 +1,152 @@
+html, body {
+	height: 100%;
+}
+
+#mainHeader {
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	position: relative;
+}
+
+#mainHeader {
+	height: calc(100% - 48px);
+}
+
+.aboutContainer {
+	height: calc(100% - 48px);
+}
+
+#allWorks {
+	height: 100%;
+}
+
+#photoAndTitle {
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#photo {
+	max-width: 135px;
+    border-radius: 75px;
+    margin: 7px 0;
+    border: 2px solid white;
+}
+
+#footerNav {
+	position: fixed;
+	bottom: 0;
+	height: 48px;
+	z-index: 100;
+}
+
+#headerSocial {
+	height: 48px;
+	padding: 8px;
+	text-align: center;
+}
+
+#mainHeader header,
+#mainHeader h1 {
+	margin: 8px 0;
+	font-size: 175%;
+}
+
+#mainHeader h2 {
+	margin: 0;
+	font-size: 125%;
+}
+
+#cvPdf {
+	float: right;
+	color: white;
+	margin-top: 5px;
+}
+
+#footerNav .titleIcon {
+	color: #646464;
+	margin-top: -7px;
+    font-size: 12px;
+}
+
+#footerNav span {
+	text-align: center;
+}
+
+#footerNav svg {
+	margin-top: 4px;
+}
+
+.headerAbout {
+	height: 48px;
+	text-align: center;
+}
+
+.aboutContainer article {
+	height: calc(100% - 48px);
+	text-align: left;
+}
+
+.aboutContainer #aboutUX h2 {
+	font-size: 160%;
+	text-align: center;
+	margin-top: 15px;
+}
+
+#videoGames {
+	position: absolute;
+	right: 25px;
+	top: 80px;
+}
+ 
+#boardGames {
+	position: absolute;
+	left: 40px;
+    top: 140px;
+}
+ 
+#trips {
+	position: absolute;
+	top: 190px;
+}
+
+#music {
+	position: absolute;
+	right: 20px;
+    top: 280px;
+}
+
+#series {
+	position: absolute;
+	left: 30px;
+    top: 350px;
+}
+ 
+#beer {
+	position: absolute;
+	left: 190px;
+    top: 400px;
+}
+
+.workDetails,
+.workDetails.col-xs-12 {
+	text-align: justify;
+}
+
+.linkToGallery {
+	margin-bottom: 20px;
+}
+
+.aboutAnchor {
+	position: absolute;
+	top: -52px;
+}
+
+.otherWork {
+	padding: 0 25px;
+}
+
+.worksList {
+	display: none;
+}

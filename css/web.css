@@ -1,0 +1,180 @@
+@media screen and (min-width: 768px) {
+
+	#mainHeader {
+		height: 270px;
+	}
+
+	#headerSocial {
+		margin: 0;
+		position: absolute;
+	    top: 205px;
+	    left: 0;
+	    z-index: 49;
+	    background-color: #373737;
+	}
+
+	#photo {
+		max-width: 150px;
+	    position: absolute;
+	    left: calc(16.7% - 105px);
+    	top: 0;
+	}
+
+	#mainHeader header,
+	#mainHeader h1 {
+		font-size: 210%;
+	}
+
+	#mainHeader h2 {
+		margin: 0;
+		font-size: 150%;
+	}
+
+	#photoAndTitle {
+		margin: 30px;
+	}
+
+	#photoAndTitle,
+	#photoAndTitle.col-xs-12 {
+		width: calc(100% - 60px);
+	}
+
+	#cvPdf {
+		position: relative;
+    	right: 100px;
+    	bottom: 50px;
+	}
+
+	#logoTwitter:hover path {
+		fill: #1da1f2;
+	}
+
+	#logoLinkedin:hover path {
+		fill: #0077b5;
+	}
+
+	#logoMail:hover path,
+	#logoMail:hover polygon {
+		fill: #f7da4c;
+	}
+
+	#cvIconContainer:hover #cvIcon path,
+	#cvIconContainer:hover #cvIcon polygon {
+		fill: #f91d0a;
+	}
+
+	#cvIconContainer:hover .titleCV {
+		color: #f91d0a;
+		font-weight: bold;
+	}
+
+	.aboutContainer {
+    	width: 23.8%;
+    	height: 500px;
+    	display: inline-block;
+    	vertical-align: top;
+    	margin: 25px 4px;
+    	white-space: normal;
+    }
+
+    .aboutContainer.aboutUXContainer {
+    	margin-left: 12px;
+    }
+
+    .headerAbout {
+    	display: none;
+    }
+
+    #aboutsBackground {
+    	width: 100%;
+    	height: 550px;
+    	background-color: #131313;
+    	position: absolute;
+    	top: 270px;
+    }
+
+    #nowrapContainer {
+    	white-space: nowrap;
+    }
+
+    #aboutUX .toolContainer {
+    	padding-left: 0;
+    }
+
+    .aboutContainer article {
+    	height: 100%;
+    }
+
+    .thumbnail {
+    	max-height: 325px;
+    }
+
+    .banner {
+    	height: 48px;
+    }
+
+    .bannerText {
+    	height: 48px;
+    	line-height: 48px;
+    	font-size: 140%;
+    }
+
+    .proTag, 
+    .persoTag {
+    	width: 100px;
+    	font-size: 130%;
+    }
+
+    .otherWork {
+		padding: 0 50px;
+	}
+
+	.worksList {
+		display: inline;
+	}
+
+    .otherWork.previousWork:hover, 
+	.otherWork.nextWork:hover {
+		color: #a6e22e;
+	}
+
+	.otherWork.previousWork:hover path, 
+	.otherWork.nextWork:hover path {
+		fill: #a6e22e;
+	}
+
+	#allWorks {
+    	height: initial;
+    	padding-bottom: 20px;
+	}
+
+	.afterWorksBackground {
+		width: 100%;
+		height: 30px;
+		background-color: #131313;
+	}
+
+	.linkToGallery {
+		display: none;
+	}
+
+	#footerNav {
+		display: none;
+	}
+
+	html {
+		background-color: #131313;
+	}
+
+	/*.workDetails,
+	.workDetails.col-xs-12 {
+		min-height: initial;
+		max-height: calc(100% - 70px);
+		overflow-y: auto;
+	}*/
+
+	#modalGallery .modal-dialog {
+		width: 84%;
+		max-width: 1000px;
+	}
+}
