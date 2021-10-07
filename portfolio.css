@@ -1,0 +1,627 @@
+html, body {
+    margin: 0;
+    font-size: 12pt;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: #37474f;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenupage {
+    width: 1200px;
+    margin: auto;
+}
+
+.bandeauentete {
+    height: 70px;
+    background: #00A6FB;
+    box-shadow: 0 4px 4px #003554;
+    padding: 0 20px;
+    font-size: 0;
+    color: #051923;
+}
+
+.bandeauentete .partiegauche,
+.bandeauentete .partiedroite {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    font-size: 12pt;
+}
+
+.bandeauentete .partiedroite {
+    text-align: right;
+}
+
+.cadrephoto,
+.nometposte {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20pt;
+    line-height: 27px;
+}
+
+.cadrephoto {
+    background: #006494;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+    border-radius: 8px;
+}
+
+.cadrephoto .photo {
+    height: 50px;
+    border-radius: 8px;
+}
+
+.iconesocial {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.blocsperso {
+    font-size: 0;
+}
+
+.blocperso {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12pt;
+}
+
+.blocperso .bandeautitre {
+    height: 50px;
+    background: #051923;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #e4e6e9;
+    font-size: 16pt;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.blocperso.equipement {
+    width: 65%;
+    height: 450px;
+}
+
+.blocperso.stats {
+    width: calc(35% - 4px);
+    height: 450px;
+    border-left: 4px solid #006494;
+}
+
+.blocperso.technologies {
+    width: 60%;
+    height: 200px;
+}
+
+.blocperso.diplomes {
+    width: calc(40% - 4px);
+    border-left: 4px solid #006494;
+    height: 200px;
+}
+
+.blocperso.missions {
+    width: 100%;
+}
+
+.blocperso.accomplissements {
+    width: 70%;
+    height: 160px;
+}
+
+.blocperso.traits {
+    width: calc(30% - 4px);
+    height: 160px;
+    border-left: 4px solid #006494;
+}
+
+.blocperso .bloccontenu {
+    height: calc(100% - 70px);
+    padding: 10px;
+    background: #003554;
+    color: #ffffff;
+}
+
+.blocperso .bloccontenu .bandeautitrecontenu {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.blocperso .bloccontenu .bandeautitrecontenu.vide {
+    height: 25px;
+    line-height: 25px;
+}
+
+.blocperso.technologies .bloccontenu {
+    font-size: 0;
+}
+
+.iconestat, 
+.nomstat, 
+.barreprogression,
+.badgexp {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+
+.lignestat:not(.experience) {
+    width: 75%;
+    font-size: 0;
+    margin: 15px auto 25px auto;
+}
+
+.lignestat:not(.experience) .nomstat {
+    width: calc(40% - 50px);
+    font-size: 12pt;
+}
+
+.lignestat:not(.experience) .barreprogression {
+    width: calc(60% - 10px);
+    font-size: 12pt;
+}
+
+.iconestat > svg {
+    width: 30px;
+    height: 30px;
+}
+
+.barreprogression {
+    background: #006494;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.barreprogression .avanceeprogression {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #00A6FB;
+    border-radius: 4px;
+}
+
+.ux .barreprogression .avanceeprogression {
+    width: 80%;
+}
+
+.ui .barreprogression .avanceeprogression {
+    width: 60%;
+}
+
+.web .barreprogression .avanceeprogression {
+    width: 80%;
+}
+
+.mobile .barreprogression .avanceeprogression {
+    width: 70%;
+}
+
+.barreprogression .nombrepregression {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #051923;
+}
+
+.lignediplome .iconediplome,
+.lignediplome .textediplome {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lignediplome .iconediplome {
+    padding-right: 10px;
+}
+
+.lignediplome .iconediplome > svg {
+    width: 30px;
+    height: 30px;
+}
+
+.lignediplome .textediplome .anneediplome {
+    background: #006494;
+    padding: 3px 8px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+.technologie {
+    display: inline-block;
+    padding: 20px 0;
+    vertical-align: top;
+    text-align: center;
+    width: 16.6%;
+    font-size: 12pt;
+}
+
+.technologie .technologieimage {
+    width: 60px;
+    border-radius: 8px;
+}
+
+.technologie .titretechnologie {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.ligneaccomplissement .imageaccomplissement {
+    padding: 0 5px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.ligneaccomplissement .imageaccomplissement > img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 4px solid #0482ca;
+}
+
+.missionsconteneur {
+    margin: 15px;
+    border-radius: 16px;
+    background: #006494;
+    position: relative;
+    height: 650px;
+    font-size: 0;
+}
+
+.missionsconteneur .separateurvertical {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transform: translate(-50%, 0);
+    width: 4px;
+    height: 100%;
+    background: #0582ca;
+}
+
+.missionsconteneur .partiegauche,
+.missionsconteneur .partiedroite {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12pt;
+    height: 100%;
+}
+
+.missionsconteneur .partiegauche {
+    width: 25%;
+}
+
+.missionsconteneur .partiedroite {
+    width: 75%;
+}
+
+.equipementconteneur {
+    font-size: 0;
+}
+
+.equipementconteneur .colonne {
+    display: inline-block;
+    vertical-align: top;
+    height: 340px;
+    position: relative;
+}
+
+.equipementconteneur .colonne.items {
+    width: 25%;
+}
+
+.equipementconteneur .colonne.personnage {
+    width: 50%;
+}
+
+.items .itemsconteneur {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.items .item {
+    margin: 20px auto;
+    border-radius: 8px;
+    background: #006494;
+    width: 72px;
+    height: 72px;
+    border: 4px solid #006494;
+    cursor: pointer;
+}
+
+.items .item.selectionne {
+    border: 4px solid #00a6fb;
+}
+
+.items .item > svg {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+}
+
+.personnage .photopersonnage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contenuquete .descriptionquete {
+    background: #0582CA;
+    height: 120px;
+    margin: 20px 20px 10px 20px;
+    padding: 15px;
+    border-radius: 16px;
+    color: #051923;
+}
+
+.contenuquete .imageprincipale {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: calc(50% - 150px);
+    padding-right: 20px;
+}
+
+.contenuquete .imageprincipale .imagequete {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.contenuquete .autresimages {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contenuquete .autresimages .vignettequete {
+    width: 60px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer;
+    border: 3px solid #003554;
+}
+
+.contenuquete .autresimages .vignettequete.selectionnee {
+    border: 3px solid #00A6FB;
+}
+
+.separateurexperience {
+    width: 70%;
+    margin: 10px auto 20px auto;
+    height: 2px;
+    background: #00A6FB;
+}
+
+.lignestat .badgexp {
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    background: #006494;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.lignestat .badgexp .badgexpinterieur {
+    width: 44px;
+    height: 44px;
+    background: #00a6fb;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lignestat .badgexp .badgexpinterieur .contenubadge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #051923;
+}
+
+.lignestat .badgexp .nombrexp {
+    font-size: 16pt;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.lignestat.experience {
+    text-align: center;
+}
+
+.titrelistequetes {
+    font-size: 16pt;
+    text-align: center;
+    line-height: 60px;
+}
+
+.separateurquetes {
+    width: 70%;
+    margin: 0 auto 20px auto;
+    height: 2px;
+    background: #003554;
+}
+
+.lignequete {
+    line-height: 50px;
+    padding: 0 10px 0 20px;
+    font-size: 14pt;
+}
+
+.lignequete.selectionnee {
+    font-weight: bold;
+    background: #0582CA;
+    color: #051923;
+}
+
+.lignequete:not(.selectionnee) {
+    cursor: pointer;
+}
+
+.lignequete:not(.selectionnee):active {
+    background: #00A6FB;
+}
+
+.titrequete {
+    font-size: 18pt;
+    text-align: center;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.recompensesquete {
+    text-align: center;
+}
+
+.recompensesquete .recompense {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    background: #051923;
+    border-radius: 16px;
+    padding: 5px 30px;
+}
+
+.recompensesquete .recompense.dates {
+    background: #003554;
+}
+
+.taches {
+    text-align: center;
+}
+
+.taches .tache {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px;
+    margin: 0 5px 20px 5px;
+    background: #003554;
+    border-radius: 8px;
+}
+
+.nometposte .nom {
+    color: #006494;
+}
+
+.nometposte .poste {
+    color: #003554;
+}
+
+.ligneaccomplissement {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.ligneaccomplissement .partiegauche {
+    padding-bottom: 5px;
+}
+
+.lignediplome {
+    padding-bottom: 15px;
+}
+
+.lignediplome .textediplome {
+    font-weight: bold;
+}
+
+.traiticone {
+    display: inline-block;
+}
+
+.traiticone > svg {
+    width: 40px;
+    height: 40px;
+    padding: 0 10px 5px 10px;
+}
+
+.fenetremodale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fenetremodale .voile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #051923;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.fenetremodale .contenumodale {
+    background: #ffffff;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 48px;
+}
+
+.fenetremodale .contenumodale .iconefermer {
+    padding: 6px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.fenetremodale .contenumodale .iconefermer > svg {
+    width: 30px;
+    height: 30px;
+}
+
+.fenetremodale .contenumodale .iconefermer:hover {
+    background: #006494;
+}
+
+.fenetremodale .contenumodale .iconefermer:active {
+    background: #0582CA;
+}
+
+.fenetremodale .contenumodale .imagemodale {
+    max-width: 80%;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
