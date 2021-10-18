@@ -625,3 +625,11 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.easteregg {
+    position: absolute;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
