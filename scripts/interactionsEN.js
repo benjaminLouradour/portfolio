@@ -105,7 +105,7 @@ function init() {
         $('.jsitem').removeClass('selectionne');
         $(this).addClass('selectionne');
 
-        $('.jstitreequipement').text('Motivé');
+        $('.jstitreequipement').text('Motivated');
 
         $('.jsiddle1').attr('src', 'img/iddle1.1.png');
         $('.jsiddle2').attr('src', 'img/iddle1.2.png');
@@ -117,7 +117,7 @@ function init() {
         $('.jsitem').removeClass('selectionne');
         $(this).addClass('selectionne');
 
-        $('.jstitreequipement').text('Curieux');
+        $('.jstitreequipement').text('Curious');
 
         $('.jsiddle1').attr('src', 'img/iddle2.1.png');
         $('.jsiddle2').attr('src', 'img/iddle2.2.png');
@@ -129,7 +129,7 @@ function init() {
         $('.jsitem').removeClass('selectionne');
         $(this).addClass('selectionne');
 
-        $('.jstitreequipement').text('Passionné');
+        $('.jstitreequipement').text('Passionate');
 
         $('.jsiddle1').attr('src', 'img/iddle3.1.png');
         $('.jsiddle2').attr('src', 'img/iddle3.2.png');
@@ -141,7 +141,7 @@ function init() {
         $('.jsitem').removeClass('selectionne');
         $(this).addClass('selectionne');
 
-        $('.jstitreequipement').text('Plein de ressources');
+        $('.jstitreequipement').text('Resourceful');
 
         $('.jsiddle1').attr('src', 'img/iddle4.1.png');
         $('.jsiddle2').attr('src', 'img/iddle4.2.png');
@@ -153,7 +153,7 @@ function init() {
         $('.jsitem').removeClass('selectionne');
         $(this).addClass('selectionne');
 
-        $('.jstitreequipement').text('Créatif');
+        $('.jstitreequipement').text('Creative');
 
         $('.jsiddle1').attr('src', 'img/iddle5.1.png');
         $('.jsiddle2').attr('src', 'img/iddle5.2.png');
@@ -165,7 +165,7 @@ function init() {
         $('.jsitem').removeClass('selectionne');
         $(this).addClass('selectionne');
 
-        $('.jstitreequipement').text('Soucieux du détail');
+        $('.jstitreequipement').text('Attention to detail');
 
         $('.jsiddle1').attr('src', 'img/iddle6.1.png');
         $('.jsiddle2').attr('src', 'img/iddle6.2.png');
@@ -205,9 +205,9 @@ function init() {
         }, 3000);
     }, 1500);
 
-    $('.jslangueen').on('click', function (e) {
+    $('.jslanguefr').on('click', function (e) {
         e.preventDefault();
 
-        document.location.href = './indexEN.html';
+        document.location.href = './index.html';
     });
 }

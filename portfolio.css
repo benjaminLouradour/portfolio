@@ -626,10 +626,22 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.easteregg {
-    position: absolute;
-    right: 20px;
-    width: 24px;
-    height: 24px;
+.langueconteneur {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.langueconteneur .langue,
+.langueconteneur .separateurlangue {
+    display: inline-block;
+    color: #003554;
+}
+
+.langueconteneur .langue.selectionnee {
+    font-weight: bold;
+}
+
+.langueconteneur .langue:not(.selectionnee) {
     cursor: pointer;
+    text-decoration: underline;
 }
